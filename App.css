@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+:root {
+  --navy: #001f3f;
+  --teal: #008080;
+  --sky-blue: #87CEEB;
+  --beige: #F5F5DC;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  /* Background Gradient: Navy to Teal mix */
+  background: linear-gradient(135deg, #001f3f 0%, #004d4d 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #000; /* Default text color Black */
+}
+
+/* Navbar Style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 8%;
+  background: var(--beige); /* Navbar Beige color */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+/* Nav Buttons */
+.nav-btn {
+  background: var(--white);
+  border: 2px solid var(--teal);
+  padding: 8px 20px;
+  margin-left: 10px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #000; /* Initial Text Black */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect: Background Teal, Text White */
+.nav-btn:hover {
+  background: var(--teal);
+  color: var(--white); /* After hover White */
+  border-color: var(--sky-blue);
+  transform: translateY(-2px);
+}
+
+.special-btn {
+  background: var(--sky-blue);
+  border: none;
+}
+
+/* Main Card */
+.content-area {
+  max-width: 600px;
+  margin: 60px auto;
+  background: var(--white); /* Card background White */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.hero h1 {
+  color: var(--beige); /* Hero text on dark background */
+  font-size: 3.5rem;
+  margin-top: 50px;
+}
+
+.hero p {
+  color: var(--sky-blue);
+}
+
+/* Input Fields */
+input {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid var(--beige);
+  border-radius: 8px;
+  background: #d9e6ec;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--teal);
+}
+
+.submit-btn {
+  background: var(--navy);
+  color: var(--white);
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: var(--teal);
+  box-shadow: 0 5px 15px rgba(0, 128, 128, 0.4);
+}
